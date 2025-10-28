@@ -1,0 +1,300 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #201E1F; /* Dark text for readability */
+    background-color: #CDBCA8; /* Soft beige base */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #201E1F, #675C5A); 
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header .logo {
+    width: 90px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #CDBCA8; 
+}
+
+header h1 {
+    margin: 12px 0 5px;
+    font-size: 2em;
+    color: #CDBCA8; 
+    letter-spacing: 0.5px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+    color: #BFB6A2; /* lighter neutral tone */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #675C5A; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #CDBCA8; 
+    text-decoration: none;
+    padding: 14px 22px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #CDBCA8; 
+    color: #201E1F; 
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(103,92,90,0.9), rgba(32,30,31,0.9)),
+                url('../images/hero-bg.jpg') center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 25px;
+}
+
+.hero-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #CDBCA8; 
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #F2F2F2;
+}
+
+.btn {
+    background-color: #6B7A89; 
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #201E1F; 
+    color: #CDBCA8;
+    transform: scale(1.05);
+}
+
+/* Container and Sections */
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+section h2 {
+    border-left: 6px solid #6B7A89;
+    padding-left: 12px;
+    color: #201E1F;
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF; 
+    border: 1px solid #D3D3D3;
+    flex: 1;
+    min-width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    border-top: 6px solid #6B7A89; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    border-top: 6px solid #201E1F; 
+}
+
+.card h3 {
+    color: #201E1F;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* Footer */
+footer {
+    background-color: #201E1F; 
+    color: #CDBCA8; 
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 50px;
+    letter-spacing: 0.5px;
+    border-top: 4px solid #6B7A89;
+}
+
+/* Modal Theme */
+.modal-theme {
+    background-color: #CDBCA8; /* Warm beige background */
+    color: #201E1F; /* Dark text */
+    border: 2px solid #6B7A89; /* Muted blue-gray border */
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Modal Header */
+.modal-header-theme {
+    background-color: #675C5A; /* Muted brown tone */
+    color: #CDBCA8; /* Contrast beige text */
+    border-bottom: 3px solid #6B7A89;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Input Fields */
+.modal-theme .form-control {
+    border: 1px solid #6B7A89;
+    background-color: #F8F7F5;
+    color: #201E1F;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-theme .form-control:focus {
+    border-color: #675C5A;
+    box-shadow: 0 0 0 0.25rem rgba(107, 122, 137, 0.25);
+}
+
+/* Buttons */
+.btn-cancel {
+    background-color: #6B7A89;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cancel:hover {
+    background-color: #201E1F;
+    color: #CDBCA8;
+    transform: scale(1.05);
+}
+
+.btn-send {
+    background-color: #201E1F;
+    color: #CDBCA8;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-send:hover {
+    background-color: #675C5A;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Label Styling */
+.modal-theme .form-label {
+    font-weight: 600;
+    color: #201E1F;
+}
+
+/* Close Button */
+.btn-close-white {
+    filter: brightness(0) invert(1);
+}
+.table thead {
+  background-color: #675C5A;
+  color: #CDBCA8;
+}
+#emp{
+    color: rgb(171, 166, 166);
+}
+#pgldn_wall{
+    background-image:  url('../img/pgldn_wall.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#fname{
+    color:white;
+}
+#email{
+    color:white;
+}
+#message{
+    color:white;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #F8F7F5;
+}
+
+.table tbody tr:hover {
+  background-color: #CDBCA8;
+  color: #201E1F;
+  transition: 0.3s ease;
+}
+
+.card {
+  border: 1px solid #6B7A89;
+  border-radius: 12px;
+  background-color: #F8F7F5;
+}
+.modal-theme {
+  background-color: #2c2f33;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+.modal-header-theme {
+  background-color: #1e1f22;
+  color: #ffffff;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268;
+}
+
+.btn-send {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
