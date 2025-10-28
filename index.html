@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Department - Investment & Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="bg-light border-bottom">
+    <div class="container text-center py-3">
+      <img src="../img/ict.png" alt="ICT Logo" class="logo mb-2" style="height: 70%;">
+      <h1>Information and Communications Technology Office</h1>
+      <p  id="emp">Empowering Growth through Technology and Innovation</p>
+    </div>
+    <nav class="bg-primary">
+      <ul class="nav justify-content-center py-2">
+        <li class=""><a href="#" class="nav-link text-white">Home</a></li>
+        <li class=""> <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#aboutModal">About Us</a></li>
+        <li class=""><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#projectsModal">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#servicesModal">Services</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <div id="pgldn_wall">
+        <section class="hero text-center text-white d-flex align-items-center justify-content-center"
+                style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hero-bg.jpg') center/cover; height: 70vh;">
+            <div>
+            <h2 class="display-5 fw-bold"></h2>
+            <p class="lead mb-4"></p>
+           
+            </div>
+        </section>
+    </div>
+
+  <main class="container my-5">
+
+    <!-- About Section -->
+    <section class="about mb-5">
+      <h2>About the ICT Department</h2>
+      <p>
+        The ICT Department leads in developing and implementing digital infrastructure,
+        promoting investment, and providing IT services for both government and private sectors.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services mb-5">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Infrastructure Development</h5>
+              <p class="card-text">Building networks, servers, and secure digital platforms for smart governance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">System Development</h5>
+              <p class="card-text">Creating customized systems to automate workflows, enhance data management, and streamline communication.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">ICT Support</h5>
+              <p class="card-text">Providing software and hardware technical support for digital empowerment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Statistics Section -->
+    <section class="service-stats">
+      <h2 class="mb-4">Service Statistics</h2>
+
+      <!-- Table -->
+      <div class="table-responsive mb-4">
+        <table class="table table-bordered table-striped align-middle text-center shadow-sm">
+          <thead class="table-dark">
+            <tr>
+              <th>Service Type</th>
+              <th>Projects Completed</th>
+              <th>Ongoing Projects</th>
+              <th>Success Rate (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Infrastructure Development</td>
+              <td>45</td>
+              <td>5</td>
+              <td>90%</td>
+            </tr>
+            <tr>
+              <td>System Development</td>
+              <td>38</td>
+              <td>7</td>
+              <td>84%</td>
+            </tr>
+            <tr>
+              <td>ICT Support</td>
+              <td>52</td>
+              <td>4</td>
+              <td>93%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Chart -->
+      <div class="card shadow-sm p-3">
+        <h5 class="text-center mb-3">Service Performance Overview</h5>
+        <canvas id="serviceChart" height="120"></canvas>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-theme">
+        <div class="modal-header modal-header-theme">
+          <h5 class="modal-title" id="contactModalLabel">Contact the ICT Department</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label id="fname" for="name" class="form-label" >Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" id="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" id="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Type your message..." required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-send">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- About Us Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-theme">
+      <div class="modal-header modal-header-theme">
+        <h5 class="modal-title" id="aboutModalLabel">About the ICT Department</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The Information and Communications Technology (ICT) Department is dedicated to advancing digital transformation
+          and innovation across public and private sectors. We develop technology-driven solutions that promote efficiency,
+          transparency, and sustainable growth through the use of cutting-edge systems and secure digital infrastructures.
+        </p>
+        <ul>
+          <li>Empowering local communities through smart technologies</li>
+          <li>Promoting ICT-driven economic growth</li>
+          <li>Supporting e-governance and data-driven policy-making</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Modal -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-theme">
+      <div class="modal-header modal-header-theme">
+        <h5 class="modal-title" id="projectsModalLabel">Our Key Projects</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Here are some of our flagship initiatives that demonstrate our commitment to innovation and efficiency:
+        </p>
+        <div class="table-responsive">
+          <table class="table table-striped text-center align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Project Name</th>
+                <th>Category</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Smart City Network</td>
+                <td>Infrastructure</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Digital Records System</td>
+                <td>System Development</td>
+                <td><span class="badge bg-warning text-dark">Ongoing</span></td>
+              </tr>
+              <tr>
+                <td>ICT Training Program</td>
+                <td>Capacity Building</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services Modal -->
+<div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-theme">
+      <div class="modal-header modal-header-theme">
+        <h5 class="modal-title" id="servicesModalLabel">Our Core Services</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+          <div class="list-group-item bg-light">
+            <h6>Infrastructure Development</h6>
+            <p class="mb-0">Building reliable, scalable digital infrastructures that power modern governance.</p>
+          </div>
+          <div class="list-group-item bg-light">
+            <h6>System Development</h6>
+            <p class="mb-0">Developing intelligent systems to automate, simplify, and improve data management.</p>
+          </div>
+          <div class="list-group-item bg-light">
+            <h6>ICT Support Services</h6>
+            <p class="mb-0">Providing 24/7 technical assistance, system maintenance, and software support.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 ICT Department. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const ctx = document.getElementById('serviceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Infrastructure', 'System Dev', 'ICT Support'],
+        datasets: [{
+          label: 'Projects Completed',
+          data: [45, 38, 52],
+          backgroundColor: ['#6B7A89', '#CDBCA8', '#675C5A'],
+          borderColor: '#201E1F',
+          borderWidth: 1,
+          borderRadius: 8
+        }, {
+          label: 'Ongoing Projects',
+          data: [5, 7, 4],
+          backgroundColor: ['rgba(107,122,137,0.5)', 'rgba(205,188,168,0.5)', 'rgba(103,92,90,0.5)'],
+          borderColor: '#201E1F',
+          borderWidth: 1,
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { color: '#201E1F', font: { size: 14 } }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#201E1F', font: { size: 13 } },
+            grid: { color: 'rgba(32,30,31,0.1)' }
+          },
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#201E1F' },
+            grid: { color: 'rgba(32,30,31,0.1)' }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
